@@ -1,0 +1,38 @@
+
+[workspace]
+name = "earth-system-trend-detective"
+version = "0.1.0"
+description = "NASA Earth System Trend Detective"
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[dependencies]
+python = "3.12.*"
+
+# Scientific computing
+numpy = "*"
+pandas = "*"
+scipy = "*"
+
+# Earth science
+xarray = "*"
+netcdf4 = "*"
+h5netcdf = "*"
+
+# Geospatial
+gdal = "*"
+proj = "*"
+geos = "*"
+rasterio = "*"
+rioxarray = "*"
+geopandas = "*"
+
+# Visualization
+matplotlib = "*"
+
+# Application
+fastapi = "*"
+uvicorn = "*"
+earthaccess = "*"
+pymannkendall = "*"
+
