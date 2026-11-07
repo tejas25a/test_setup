@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Layout</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EarthTrend · India</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <div class="container">
-    <div class="left-column">
-      <div class="box map-box" id="mapSection">MAP</div>
-      <div class="box option-box" id="optionSection">Option</div>
-    </div>
-    <div class="box summary-box" id="summarySection">SUMMARY</div>
-  </div>
-
-  <script src="scripts.js"></script>
+<div class="wrap">
+<header><div class="brand">EarthTrend <span>/ India</span></div><div class="note">Illustrative data for design preview</div></header>
+<main class="grid">
+  <section class="card map" id="mapbox" aria-label="Map of India">
+    <svg id="svg" viewBox="0 0 504 432" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Dot map of India and surrounding area with regional trend markers"></svg>
+    <div class="legend"><div class="bar" id="bar"></div><div><span id="lo"></span><span id="hi"></span></div></div>
+  </section>
+  <section class="card options" aria-label="Options">
+    <div class="grp"><label>Measure</label><div class="seg" id="m"></div></div>
+    <div class="grp"><label>Time period</label>
+      <div class="ctl"><div class="seg" id="p"></div><select id="mo" aria-label="Month"></select><select id="yr" aria-label="Year"></select></div></div>
+  </section>
+  <aside class="card summary" aria-live="polite">
+    <div><div class="kicker" id="k"></div><div class="title" id="t"></div></div>
+    <div><div class="big" id="v"></div><div class="cap" id="c"></div></div>
+    <div class="rank"></div>
+    <div class="list" id="top"></div>
+    <div class="list" id="low"></div>
+    <button class="reset" id="reset">← Back to all India</button>
+  </aside>
+</main>
+</div>
+<script src="scripts.js"></script>
 </body>
 </html>
