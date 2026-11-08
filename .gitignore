@@ -1,1 +1,3 @@
 *.orig
+data/processed
+data/raw
