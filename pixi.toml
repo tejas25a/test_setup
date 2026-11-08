@@ -35,4 +35,5 @@ fastapi = "*"
 uvicorn = "*"
 earthaccess = "*"
 pymannkendall = "*"
+dask = ">=2026.8.0,<2027"
 
