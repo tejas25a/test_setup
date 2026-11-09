@@ -36,4 +36,5 @@ uvicorn = "*"
 earthaccess = "*"
 pymannkendall = "*"
 dask = ">=2026.8.0,<2027"
+opencv = ">=5.0.0,<6"
 
