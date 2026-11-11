@@ -131,8 +131,9 @@ function refreshLabels() {
   stateLabels.forEach(m => {
     if (m._state === selected) return;
     if (view.contains(m.getLatLng()) && fits(m)) {
-      labelGroup.addLayer(m);
-      m.getElement().classList.toggle("lbl-dim", !!selected);   // other states are greyed once one is selected
+    	labelGroup.addLayer(m);
+	const el = m.getElement();
+    	if (el) el.classList.toggle("lbl-dim", !!selected);   // other states are greyed once one is selected
     }
   });
   if (selected) {
